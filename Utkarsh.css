@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  
+}
+
+body {
+    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "nav nav nav"
+    "sidebar main main"
+    "footer footer footer";
+  gap: 2px;
+  height: 100vh;
+}
+
+/* Navbar */
+.nav {
+ 
+  display: flex;
+  gap: 20px;
+  margin: 2px;
+  padding: 2px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+  grid-area: nav;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav .logo img {
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav .social-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav .logo {
+    display: flex;
+    gap: 3px;
+  text-decoration: solid;
+  padding: 8px 16px;
+}
+.nav .logo button{
+    display: none;
+}
+.nav .social-contact a ,.sidebar .Resume a ,.sidebar .dark-mode button,.sidebar .certificate a ,.main .Contact .sub-but button,.sidebar .project a{
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: 2s linear ;
+  font-style: italic;
+  margin: 3px;
+}
+.nav .social-contact a:hover,.sidebar .Resume a:hover,.sidebar .dark-mode button:hover ,.sidebar .certificate a:hover, .main .Contact .sub-but button:hover,.sidebar .project a:hover {
+   margin: 5px;
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+    font-style: italic;
+    
+}
+
+
+/* side-bar */
+.sidebar {
+  position: sticky;
+  margin: 2px;
+  padding: 2px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 20px;
+}
+.sidebar .image img{
+    width: 100px;
+    border-radius: 50px;
+    height: 100px;
+    object-fit: cover;
+    transition: 2s ease 1s ;
+    border: 1px solid pink;
+    margin: 5px;
+}
+.sidebar .image img:hover{
+  border-radius: 0px;
+}
+.sidebar .image img:hover{
+    transform: scale(1.1);
+}
+.sidebar
+ .Resume{
+   margin: 5px;
+   padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar .project{
+   margin: 5px;
+   padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+body.active .nav,
+body.active .sidebar,
+body.active .main,
+body.active .main .about,
+body.active .main .Skills,
+body.active .main .Contact,
+body.active .footer{
+    background-color: rgb(15, 14, 14);
+    color: white;
+    border: 2px solid white;
+    box-shadow: 3px 3px 10px 2px rgba(230, 191, 231, 0.3);
+    margin: 5px;
+    padding: 5px;
+}
+
+.sidebar .certificate {
+  margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+.sidebar .image h3,.sidebar
+ .Resume h3,.sidebar .certificate h3,.sidebar .project h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+/* Main-bar */
+.main {
+  margin: 2px;
+  padding: 2px;
+  /* border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3); */
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+ 
+}
+.main .about{
+     border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ 
+}
+
+.main .about h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-style: italic;
+
+}
+.main .Skills{
+     border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.main .Skills{
+     border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.main .Skills h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-style: italic;
+
+}
+.main .Contact{
+     border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.main .Contact{
+     border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.main .Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-style: italic;
+}
+.main .Contact .sub-but{
+    display: flex;
+    
+  justify-content: center;
+}
+.footer {
+  margin: 2px;
+  padding: 2px;
+  /* border: 2px solid black;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3); */
+  grid-area: footer;
+  font-style: italic;
+  display: flex;
+  
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    body {
+    
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-areas:
+    "nav"
+    "main "
+    "footer ";
+  gap: 2px;
+}
+.nav{
+    grid-area: nav;
+}
+.sidebar{ 
+
+    display:none;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.nav .logo button{
+    display: block;
+}
+.nav .social-contact a ,.sidebar .Resume a ,.sidebar .dark-mode button,.sidebar .certificate a ,.main .Contact .sub-but button,.sidebar .project a{
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  /* display: flex; */
+  text-decoration: none;
+  padding: 4px 8px;
+  transition: 2s linear ;
+  font-style: italic;
+  margin: 2px;
+}
+.nav .social-contact a:hover,.sidebar .Resume a:hover,.sidebar .dark-mode button:hover ,.sidebar .certificate a:hover, .main .Contact .sub-but button:hover,.sidebar .project a:hover {
+   margin: 2px;
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+    font-style: italic;
+    
+}
+  body.sidebar-active {
+    grid-template-areas:
+      "nav nav nav"
+      "sidebar main main"
+      "footer footer footer";
+  }
+
+  body.sidebar-active .sidebar {
+    display: block;
+    grid-area: sidebar;
+   
+    
+  }
+
+}

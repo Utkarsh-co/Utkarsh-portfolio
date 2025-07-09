@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh-portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="Utkarsh.css">
+</head>
+<body>
+    <!-- NavBar -->
+     <div class="nav">
+    <div class="logo">
+  <button onclick="remove()">☰</button>
+  <img src="utkarsh-logo.png" alt="UT Logo" width="40" height="40">
+  <h3>Utkarsh Dev</h3>
+</div>
+     
+        <div class="social-contact">
+            <a href="https://www.instagram.com/utkarsh_tiwari27?igsh=ZjhvMHI2MjB1anBh " target="_blank"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="https://github.com/Utkarsh-co" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+            <a href="https://www.linkedin.com/in/utkarsh-tiwari-983b04319" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+    </div>
+    <!-- SideBar -->
+    <div class="sidebar">
+        <div class="image">
+            <h3>More Details </h3>
+            <img src="Utkarsh.jpg" alt="Utkarsh">
+            <h3>Utkarsh Tiwari</h3>
+        </div>
+        <div class="Resume">
+            <h3>📄Resume</h3>
+            <a href="Resume updated.pdf" target="_blank">View</a>
+        </div>
+        <div class="project">
+            <h3>☁️Weather App</h3>
+            <a href="https://github.com/Utkarsh-co/check-weather-project.git" target="_blank">View</a>
+        </div>
+        <div class="dark-mode">
+            <button onclick="Mode()">🌉Light Mode</button>
+        </div>
+        <div class="certificate">
+            <h3>📰MY certificate</h3>
+            <a href="certificate.pdf">View 1</a>
+            <a href="Coursera ILNNR635YT1K.pdf">View 2</a>
+        </div>
+    </div>
+<!-- main-Bar -->
+    <div class="main">
+        <div class="about" data-aos="fade-up">
+            <h3>About Me</h3>
+             <p>
+        Hi! I'm <strong>Utkarsh Tiwari</strong>, a BCA student at MPCPS,
+        currently pursuing my Bachelor's in Computer Applications and expected
+        to graduate in <strong>2027</strong>. <br /><br />
+        I’m passionate about technology and web development, and I enjoy
+        building projects that solve real-world problems.
+        <br /><br />
+        I have hands-on experience with programming languages like
+        <strong>C, C++, and Python</strong>, and I’m skilled in front-end
+        technologies including <strong>HTML, CSS, and JavaScript</strong>.
+        <br /><br />
+        I’m currently learning <strong>React.js</strong> to build more dynamic
+        and modern web applications. <br /><br />
+        One of my recent projects is <em>Weather Report</em>, a web app built
+        using HTML, CSS, JavaScript, and an external weather API. It’s available
+        on my GitHub and showcases my understanding of API integration and UI
+        design. <br /><br />
+        I'm eager to keep learning, collaborate on exciting projects, and grow
+        as a developer.
+      </p>
+        </div>
+        <div class="Skills" data-aos="fade-up">
+            <h3>My Skills</h3>
+              <p>  
+    <strong>Programming Languages:</strong> C, C++, Python<br />
+    <strong>Web Technologies:</strong> HTML, CSS, JavaScript<br />
+    <strong>Currently Learning:</strong> React.js<br />
+    <strong>Tools & Platforms:</strong> Git, GitHub, API Integration
+  </p>
+        </div>
+        <div class="Contact" data-aos="fade-up">
+            <h3>For Contact</h3>
+            <label for="Name">Name</label>
+      <input type="text" placeholder="Enter Your Name" id="Name" required>
+
+      <label for="E-mail">E-mail</label>
+      <input type="email" placeholder="Enter your E-mail" id="E-mail" required>
+      
+      <label for="Phone">Phone no</label>
+      <input type="tel" placeholder="Enter your Phone number" id="Phone" required>
+    <div class="sub-but">
+      <button onclick="Submit()">Submit</button>
+      </div>
+      <br>
+      <p id="msg"></p>
+        </div>
+    </div>
+    <div class="footer">&copy;Utkarsh Tiwari</div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="Utkarsh.js"></script>
+</html>
