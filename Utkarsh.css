@@ -209,7 +209,13 @@ body.active .footer{
   gap: 5px;
   
 }
-
+ .main .Contact  #contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+ }
 .main .Contact {
     display: flex;
     justify-content: center;
