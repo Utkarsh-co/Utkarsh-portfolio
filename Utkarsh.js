@@ -25,3 +25,21 @@ function Submit() {
  function remove(){
     document.body.classList.toggle("sidebar-active")
  }
+  
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_9r3s478", "template_aiwbzjb", this)
+    .then(function () {
+      document.getElementById("msg").innerHTML = "Message sent successfully!";
+      setTimeout(() => {
+        document.getElementById("msg").innerHTML = "";
+      }, 5000);
+      document.getElementById("contact-form").reset();
+    }, function (error) {
+      console.log("FAILED...", error);
+      document.getElementById("msg").innerHTML = "Failed to send message.";
+    });
+});
+

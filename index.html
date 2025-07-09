@@ -9,6 +9,13 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="Utkarsh.css">
+
+    <!-- EmailJS script -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("RP4y2iWCt0djaIwg_"); 
+</script>
+
 </head>
 <body>
     <!-- NavBar -->
@@ -85,19 +92,25 @@
         </div>
         <div class="Contact" data-aos="fade-up">
             <h3>For Contact</h3>
-            <label for="Name">Name</label>
-      <input type="text" placeholder="Enter Your Name" id="Name" required>
+<form id="contact-form">
+  <label for="name">Name</label>
+  <input type="text" name="name" placeholder="Enter Your Name" required>
 
-      <label for="E-mail">E-mail</label>
-      <input type="email" placeholder="Enter your E-mail" id="E-mail" required>
-      
-      <label for="Phone">Phone no</label>
-      <input type="tel" placeholder="Enter your Phone number" id="Phone" required>
-    <div class="sub-but">
-      <button onclick="Submit()">Submit</button>
-      </div>
-      <br>
-      <p id="msg"></p>
+  <label for="email">E-mail</label>
+  <input type="email" name="email" placeholder="Enter your E-mail" required>
+
+  <label for="title">Subject</label>
+  <input type="text" name="title" placeholder="Subject" required>
+
+  <label for="message">Message</label>
+  <textarea name="message" placeholder="Write your message here..." required></textarea>
+
+  <div class="sub-but">
+    <button type="submit">Send</button>
+  </div>
+
+  <p id="msg"></p>
+</form>
         </div>
     </div>
     <div class="footer">&copy;Utkarsh Tiwari</div>
